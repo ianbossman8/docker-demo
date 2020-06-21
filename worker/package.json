@@ -1,0 +1,30 @@
+{
+  "name": "docker-demo-redis",
+  "version": "0.0.1",
+  "description": "docker-demo-redis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start:dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianchan035/docker-demo-backend.git"
+  },
+  "keywords": [
+    "docker"
+  ],
+  "author": "ian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ianchan035/docker-demo-backend/issues"
+  },
+  "homepage": "https://github.com/ianchan035/docker-demo-backend#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "redis": "^3.0.2"
+  }
+}
