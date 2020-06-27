@@ -18,3 +18,16 @@ after_success:
   - docker push ian035/multi-nginx
   - docker push ian035/multi-server
   - docker push ian035/multi-worker
+
+deploy:
+  edge: true
+  provider: elasticbeanstalk
+  region: 'eu-west-2'
+  app: 'docker-demo'
+  env: 'DockerDemo-env'
+  bucket_name: 'elasticbeanstalk-eu-west-2-406965596077'
+  bucket_path: 'docker-demo'
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
